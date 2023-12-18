@@ -5,6 +5,10 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+# vcpkg
+vcpkg*
+vcpkg*/
+
 # Dump file
 *.stackdump
 

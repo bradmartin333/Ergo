@@ -169,4 +169,8 @@
     </PropertyGroup>
     <Error Condition="!Exists('packages\raylib.4.5.0\build\native\raylib.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\raylib.4.5.0\build\native\raylib.targets'))" />
   </Target>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
 </Project>
